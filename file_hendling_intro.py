@@ -1,15 +1,22 @@
-df=open("file.txt","r")
-content=df.read()
-print(content)
-#here we are opening the file in read mode and then reading the content of the file and printing it.
+# df=open("file.txt","r")
+# content=df.read()
+# print(content)
+# #here we are opening the file in read mode and then reading the content of the file and printing it.
 
 
 
 
 
-# with open('file.txt','w') as file:
-#     file.write("this line will be written to the file by the write method\n")
-#     file.write("this line will also be written to the file by the write method\n")
-# print("file has been written successfully")
+# # with open('file.txt','w') as file:
+# #     file.write("this line will be written to the file by the write method\n")
+# #     file.write("this line will also be written to the file by the write method\n")
+# # print("file has been written successfully")
 
+
+try:
+     file=open('file.txt','r')
+     content=file.read()
+     print(content)
+except FileNotFoundError as e:
+    print("the file you are trying to read does not exist" ,e)
 
