@@ -1,1 +1,2 @@
-this file use for understend about file hendling!!
+this line will be written to the file by the write method
+this line will also be written to the file by the write method
